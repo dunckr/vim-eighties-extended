@@ -112,9 +112,9 @@
     exe "hi jsFuncBlock "      .base00
     exe "hi jsTernaryIf "      .base00
 
-    exe "hi jsFuncName "       .base00
+    exe "hi jsFuncName "       .base08
     exe "hi jsFunction "       .base00
-    exe "hi jsFuncArgs "       .base00
+    exe "hi jsFuncArgs "       .base0B
     exe "hi jsFuncArgCommas "  .base00
     exe "hi jsFuncArgRest "    .base00
     exe "hi jsArgsObj "        .base00
