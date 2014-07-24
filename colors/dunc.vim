@@ -1,4 +1,4 @@
-" mango.vim {{{
+" dunc.vim {{{
   set t_Co=256
   let g:colors_name = "dunc"
   let bgcolor = &background
@@ -6,77 +6,129 @@
 " }}}
 
 " Colors: {{{
-  if bgcolor == "light"
-    let Black = "guifg=#444444 guibg=NONE gui=NONE ctermfg=238 ctermbg=NONE cterm=NONE"
-    let Orange = "guifg=#ff5f00 guibg=NONE gui=NONE ctermfg=202 ctermbg=NONE cterm=NONE"
-    let Peach = "guifg=#ff875f guibg=NONE gui=NONE ctermfg=209 ctermbg=NONE cterm=NONE"
-    let Red = "guifg=#ff0000 guibg=NONE gui=NONE ctermfg=196 ctermbg=NONE cterm=NONE"
-  endif
-  if bgcolor == "dark"
-    let Black = "guifg=#585858 guibg=NONE gui=NONE ctermfg=240 ctermbg=NONE cterm=NONE"
-    let Orange = "guifg=#ffaf00 guibg=NONE gui=NONE ctermfg=214 ctermbg=NONE cterm=NONE"
-    let Peach = "guifg=#ffd787 guibg=NONE gui=NONE ctermfg=222 ctermbg=NONE cterm=NONE"
-    let Red = "guifg=#ff5f5f guibg=NONE gui=NONE ctermfg=203 ctermbg=NONE cterm=NONE"
-  endif
-
-  let Green = "guifg=#87af5f guibg=NONE gui=NONE ctermfg=107 ctermbg=NONE cterm=NONE"
-  let Gray = "guifg=#bcbcbc guibg=NONE gui=NONE ctermfg=250 ctermbg=NONE cterm=NONE"
-  let Blue = "guifg=#5fafdf guibg=NONE gui=NONE ctermfg=74 ctermbg=NONE cterm=NONE"
-  let Pink = "guifg=#ff5faf guibg=NONE gui=NONE ctermfg=205 ctermbg=NONE cterm=NONE"
-  let Purple = "guifg=#af87ff guibg=NONE gui=NONE ctermfg=141 ctermbg=NONE cterm=NONE"
-  let Silver = "guifg=#8a8a8a guibg=NONE gui=NONE ctermfg=245 ctermbg=NONE cterm=NONE"
-  let White = "guifg=#eeeeee guibg=NONE gui=NONE ctermfg=255 ctermbg=NONE cterm=NONE"
+  let base00 = "guifg=#2f1e2e guibg=NONE gui=NONE ctermfg=00 ctermbg=NONE cterm=NONE"
+  let base01 = "guifg=#41323f guibg=NONE gui=NONE ctermfg=10 ctermbg=NONE cterm=NONE"
+  let base02 = "guifg=#4f424c guibg=NONE gui=NONE ctermfg=11 ctermbg=NONE cterm=NONE"
+  let base03 = "guifg=#776e71 guibg=NONE gui=NONE ctermfg=08 ctermbg=NONE cterm=NONE"
+  let base04 = "guifg=#8d8687 guibg=NONE gui=NONE ctermfg=12 ctermbg=NONE cterm=NONE"
+  let base05 = "guifg=#a39e9b guibg=NONE gui=NONE ctermfg=07 ctermbg=NONE cterm=NONE"
+  let base06 = "guifg=#b9b6b0 guibg=NONE gui=NONE ctermfg=13 ctermbg=NONE cterm=NONE"
+  let base07 = "guifg=#e7e9db guibg=NONE gui=NONE ctermfg=15 ctermbg=NONE cterm=NONE"
+  let base08 = "guifg=#ef6155 guibg=NONE gui=NONE ctermfg=01 ctermbg=NONE cterm=NONE"
+  let base09 = "guifg=#f99b15 guibg=NONE gui=NONE ctermfg=09 ctermbg=NONE cterm=NONE"
+  let base0A = "guifg=#fec418 guibg=NONE gui=NONE ctermfg=03 ctermbg=NONE cterm=NONE"
+  let base0B = "guifg=#48b685 guibg=NONE gui=NONE ctermfg=02 ctermbg=NONE cterm=NONE"
+  let base0C = "guifg=#5bc4bf guibg=NONE gui=NONE ctermfg=06 ctermbg=NONE cterm=NONE"
+  let base0D = "guifg=#06b6ef guibg=NONE gui=NONE ctermfg=04 ctermbg=NONE cterm=NONE"
+  let base0E = "guifg=#815ba4 guibg=NONE gui=NONE ctermfg=05 ctermbg=NONE cterm=NONE"
+  let base0F = "guifg=#e96ba8 guibg=NONE gui=NONE ctermfg=14 ctermbg=NONE cterm=NONE"
 " }}}
 
-" Dark Background: {{{
-    exe "hi Boolean "         .Red
-    exe "hi Constant "        .Purple
-    exe "hi Character "       .Green
-    exe "hi Comment "         .Black
-    exe "hi Conditional "     .Peach
-    exe "hi Debug "           .Black
-    exe "hi Define "          .Purple
-    exe "hi Delimiter "       .White
-    exe "hi Exception "       .Peach
-    exe "hi Float "           .Blue
-    exe "hi Function "        .White
-    exe "hi Identifier "      .White
-    exe "hi Ignore "          .Blue
-    exe "hi Include "         .Purple
-    exe "hi Keyword "         .Peach
-    exe "hi Label "           .Peach
-    exe "hi LineNr "          .Black
-    exe "hi Macro "           .Purple
-    exe "hi Normal "          .White
-    exe "hi Noise "           .White
-    exe "hi Number "          .Blue
-    exe "hi Operator "        .Peach
-    exe "hi PreCondit "       .Purple
-    exe "hi PreProc "         .Purple
-    exe "hi Repeat "          .Peach
-    exe "hi Special "         .Pink
-    exe "hi SpecialChar "     .Pink
-    exe "hi SpecialComment "  .Pink
-    exe "hi Statement "       .Peach
-    exe "hi StorageClass "    .Orange
-    exe "hi String "          .Green
-    exe "hi Structure "       .Orange
-    exe "hi Tag "             .White
-    exe "hi Type "            .Orange
-    exe "hi TypeDef "         .Orange
+" Background: {{{
+    exe "hi Boolean "          .base00
+    exe "hi Constant "         .base00
+    exe "hi Character "        .base00
+    exe "hi Comment "          .base00
+    exe "hi Conditional "      .base00
+    exe "hi Debug "            .base00
+    exe "hi Define "           .base00
+    exe "hi Delimiter "        .base00
+    exe "hi Exception "        .base00
+    exe "hi Float "            .base00
+    exe "hi Function "         .base00
+    exe "hi Identifier "       .base00
+    exe "hi Ignore "           .base00
+    exe "hi Include "          .base00
+    exe "hi Keyword "          .base00
+    exe "hi Label "            .base00
+    exe "hi LineNr "           .base00
+    exe "hi Macro "            .base00
+    exe "hi Normal "           .base00
+    exe "hi Noise "            .base00
+    exe "hi Number "           .base00
+    exe "hi Operator "         .base00
+    exe "hi PreCondit "        .base00
+    exe "hi PreProc "          .base00
+    exe "hi Repeat "           .base00
+    exe "hi Special "          .base00
+    exe "hi SpecialChar "      .base00
+    exe "hi SpecialComment "   .base00
+    exe "hi Statement "        .base00
+    exe "hi StorageClass "     .base00
+    exe "hi String "           .base00
+    exe "hi Structure "        .base00
+    exe "hi Tag "              .base00
+    exe "hi Type "             .base00
+    exe "hi TypeDef "          .base00
 
-    exe "hi javascriptParens " .Purple
-    exe "hi javascriptBraces " .Pink
-    exe "hi javaScriptBoolean " .Pink
-    exe "hi javaScriptMember " .Pink
-    exe "hi javascriptBraces " .Pink
-    exe "hi javaScriptIdentifier " .Pink
-    exe "hi javaScript " .Pink
-    exe "hi javaScriptFunction " .Pink
-    exe "hi javaScriptStringS " .Pink
-    exe "hi javaScriptBraces " .Pink
-    exe "hi javaScriptParens " .Pink
-    exe "hi javaScriptGlobal " .Pink
+    exe "hi jsFuncCall "       .base00
+    exe "hi jsParens "         .base00
+    exe "hi jsFuncCall "       .base00
+    exe "hi jsSpecial "        .base00
+    exe "hi jsTemplateVar "    .base00
+    exe "hi jsStringD "        .base00
+    exe "hi jsStringS "        .base00
+    exe "hi jsTemplateString " .base00
+    exe "hi jsRegexpCharClass ".base00
+    exe "hi jsRegexpBoundary " .base00
+    exe "hi jsRegexpBackRef "  .base00
+    exe "hi jsRegexpQuantifier ".base00
+    exe "hi jsRegexpOr "       .base00
+    exe "hi jsRegexpMod "      .base00
+    exe "hi jsRegexpSpecial "  .base00
+    exe "hi jsRegexpGroup "    .base00
+    exe "hi jsRegexpString "   .base00
+    exe "hi jsNumber "         .base00
+    exe "hi jsFloat "          .base00
+    exe "hi jsObjectKey "      .base00
+    exe "hi jsFunctionKey "    .base00
+
+    exe "hi jsStorageClass "   .base00
+    exe "hi jsOperator "       .base00
+    exe "hi jsOperator "       .base00
+    exe "hi jsBooleanTrue "    .base00
+    exe "hi jsBooleanFalse "   .base00
+
+    exe "hi jsNull "           .base00
+    exe "hi jsThis "           .base00
+    exe "hi jsReturn "         .base00
+    exe "hi jsUndefined "      .base00
+    exe "hi jsNan "            .base00
+    exe "hi jsPrototype "      .base00
+
+    exe "hi jsDocTags "        .base00
+    exe "hi jsDocType "        .base00
+    exe "hi jsDocTypeNoParam " .base00
+    exe "hi jsDocParam "       .base00
+    exe "hi jsDocSeeTag "      .base00
+
+    exe "hi jsParen "          .base00
+
+    exe "hi jsExpression "     .base00
+    exe "hi jsAll "            .base00
+    exe "hi jsBracket "        .base00
+    exe "hi jsParen "          .base00
+    exe "hi jsBlock "          .base00
+    exe "hi jsFuncBlock "      .base00
+    exe "hi jsTernaryIf "      .base00
+
+    exe "hi jsFuncName "       .base00
+    exe "hi jsFunction "       .base00
+    exe "hi jsFuncArgs "       .base00
+    exe "hi jsFuncArgCommas "  .base00
+    exe "hi jsFuncArgRest "    .base00
+    exe "hi jsArgsObj "        .base00
+
+    exe "hi jsStatement "      .base00
+    exe "hi jsConditional "    .base00
+    exe "hi jsRepeat "         .base00
+    exe "hi jsLabel "          .base00
+    exe "hi jsKeyword "        .base00
+    exe "hi jsException "      .base00
+    exe "hi jsGlobalObjects "  .base00
+    exe "hi jsGlobalObjects "  .base00
+    exe "hi jsExceptions "     .base00
+    exe "hi jsBuiltins "       .base00
 
     hi CursorLine   guifg=NONE      guibg=#1c1c1c   gui=NONE      ctermfg=NONE      ctermbg=234       cterm=NONE
     hi ColorColumn  guifg=#ff0000   guibg=#1c1c1c   gui=NONE      ctermfg=203       ctermbg=234       cterm=NONE
