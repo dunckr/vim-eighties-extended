@@ -88,11 +88,11 @@
     exe "hi jsBooleanTrue "    .base00
     exe "hi jsBooleanFalse "   .base00
 
-    exe "hi jsNull "           .base00
-    exe "hi jsThis "           .base00
-    exe "hi jsReturn "         .base00
-    exe "hi jsUndefined "      .base00
-    exe "hi jsNan "            .base00
+    exe "hi jsNull "           .base0B
+    exe "hi jsThis "           .base0C
+    exe "hi jsReturn "         .base0B
+    exe "hi jsUndefined "      .base0C
+    exe "hi jsNan "            .base0C
     exe "hi jsPrototype "      .base00
 
     exe "hi jsDocTags "        .base00
@@ -106,7 +106,7 @@
     exe "hi jsBracket "        .base00
     exe "hi jsParen "          .base02
     exe "hi jsBlock "          .base00
-    exe "hi jsFuncBlock "      .base00
+    exe "hi jsFuncBlock "      .base07
     exe "hi jsTernaryIf "      .base0D
 
     exe "hi jsFuncName "       .base08
@@ -120,7 +120,7 @@
     exe "hi jsConditional "    .base0D
     exe "hi jsRepeat "         .base00
     exe "hi jsLabel "          .base00
-    exe "hi jsKeyword "        .base00
+    exe "hi jsKeyword "        .base02
     exe "hi jsException "      .base00
     exe "hi jsGlobalObjects "  .base00
     exe "hi jsGlobalObjects "  .base00
