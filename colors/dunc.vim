@@ -41,7 +41,7 @@
     exe "hi Include "          .base00
     exe "hi Keyword "          .base00
     exe "hi Label "            .base00
-    exe "hi LineNr "           .base00
+    exe "hi LineNr "           .base03
     exe "hi Macro "            .base00
     exe "hi Normal "           .base00
     exe "hi Noise "            .base00
@@ -63,11 +63,11 @@
 
     exe "hi jsFuncCall "       .base00
     exe "hi jsParens "         .base00
-    exe "hi jsFuncCall "       .base00
+    exe "hi jsFuncCall "       .base0E
     exe "hi jsSpecial "        .base00
     exe "hi jsTemplateVar "    .base00
     exe "hi jsStringD "        .base00
-    exe "hi jsStringS "        .base00
+    exe "hi jsStringS "        .base0C
     exe "hi jsTemplateString " .base00
     exe "hi jsRegexpCharClass ".base00
     exe "hi jsRegexpBoundary " .base00
@@ -78,14 +78,13 @@
     exe "hi jsRegexpSpecial "  .base00
     exe "hi jsRegexpGroup "    .base00
     exe "hi jsRegexpString "   .base00
-    exe "hi jsNumber "         .base00
+    exe "hi jsNumber "         .base0D
     exe "hi jsFloat "          .base00
     exe "hi jsObjectKey "      .base00
     exe "hi jsFunctionKey "    .base00
 
     exe "hi jsStorageClass "   .base00
-    exe "hi jsOperator "       .base00
-    exe "hi jsOperator "       .base00
+    exe "hi jsOperator "       .base0C
     exe "hi jsBooleanTrue "    .base00
     exe "hi jsBooleanFalse "   .base00
 
@@ -102,15 +101,13 @@
     exe "hi jsDocParam "       .base00
     exe "hi jsDocSeeTag "      .base00
 
-    exe "hi jsParen "          .base00
-
     exe "hi jsExpression "     .base00
     exe "hi jsAll "            .base00
     exe "hi jsBracket "        .base00
-    exe "hi jsParen "          .base00
+    exe "hi jsParen "          .base02
     exe "hi jsBlock "          .base00
     exe "hi jsFuncBlock "      .base00
-    exe "hi jsTernaryIf "      .base00
+    exe "hi jsTernaryIf "      .base0D
 
     exe "hi jsFuncName "       .base08
     exe "hi jsFunction "       .base00
@@ -119,8 +116,8 @@
     exe "hi jsFuncArgRest "    .base00
     exe "hi jsArgsObj "        .base00
 
-    exe "hi jsStatement "      .base00
-    exe "hi jsConditional "    .base00
+    exe "hi jsStatement "      .base0D
+    exe "hi jsConditional "    .base0D
     exe "hi jsRepeat "         .base00
     exe "hi jsLabel "          .base00
     exe "hi jsKeyword "        .base00
