@@ -105,7 +105,7 @@
     exe "hi jsAll "            .base00
     exe "hi jsBracket "        .base0C
     exe "hi jsParen "          .base02
-    exe "hi jsBlock "          .base00
+    exe "hi jsBlock "          .base07
     exe "hi jsFuncBlock "      .base07
     exe "hi jsTernaryIf "      .base0D
 
