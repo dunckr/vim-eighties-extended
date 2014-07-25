@@ -103,7 +103,7 @@
 
     exe "hi jsExpression "     .base00
     exe "hi jsAll "            .base00
-    exe "hi jsBracket "        .base00
+    exe "hi jsBracket "        .base0C
     exe "hi jsParen "          .base02
     exe "hi jsBlock "          .base00
     exe "hi jsFuncBlock "      .base07
