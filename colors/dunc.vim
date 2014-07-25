@@ -80,7 +80,7 @@
     exe "hi jsRegexpString "   .base00
     exe "hi jsNumber "         .base0D
     exe "hi jsFloat "          .base00
-    exe "hi jsObjectKey "      .base00
+    exe "hi jsObjectKey "      .base0C
     exe "hi jsFunctionKey "    .base00
 
     exe "hi jsStorageClass "   .base00
