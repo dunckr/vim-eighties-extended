@@ -1,6 +1,6 @@
-" dunc.vim {{{
+" eighties-extended.vim{{{
   set t_Co=256
-  let g:colors_name = "dunc"
+  let g:colors_name = "eighties-extended"
   let bgcolor = &background
   highlight clear SignColumn
 " }}}
