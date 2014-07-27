@@ -1,10 +1,12 @@
-# vim theme
+# Vim Eighties Extended
 
-![Screenshot]()
+![Screenshot](http://dunckr.com/imgs/vim.png)
 
-## Install
+Customisation of the excellent [Base16-Eighties](http://chriskempson.github.io/base16/#eighties) color scheme.
+
+## Installation
 + [vim-javascript](https://github.com/pangloss/vim-javascript/)
-+ ```color theme```
++ ```color eighties-extended```
 
 ## License
 MIT
